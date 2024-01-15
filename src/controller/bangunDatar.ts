@@ -46,11 +46,11 @@ const luasLingkaran = (request: Request, response: Response) => {
 const luasPersegi = (request: Request, response: Response) => {
     try {
         
-        const sisi: number =Number(request.body.sisi)
-        const luas = sisi * 4
+        const s: number =Number(request.body.s)
+        const luas = s * 4
         return response.status(200).json({
             status: true,
-            sisi,
+            s,
             luas
         })
     } catch (error) {
